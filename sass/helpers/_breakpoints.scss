@@ -1,0 +1,19 @@
+@mixin breakpoint($res) {
+    @if ($res == "phones") {
+        @media(min-width: 576px) {
+            @content;
+        }
+    }@else if ($res == "tablets") {
+        @media(min-width:768px) {
+            @content;
+        }
+    }@else if ($res == "laptops") {
+        @media(min-width:992px) {
+            @content;
+        }
+    }@else if ($res == "large") {
+        @media(min-width:1200px) {
+            @content;
+        }
+    }
+};

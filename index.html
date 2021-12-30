@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+    <!-- style -->
+    <link rel="stylesheet" href="./sass/style.css" />
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="./sass/all.min.css" />
+    <!-- google-fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <div class="todo">
+          <div class="new txt">
+            <input
+              type="text"
+              id="new-todo"
+              placeholder="What are your plans for today"
+              autofocus
+            />
+          </div>
+          <div class="icons new-icons">
+            <i id="add-btn" class="far fa-plus-square"></i>
+          </div>
+        </div>
+        <div class="todos"></div>
+      </div>
+    </div>
+    <!-- script -->
+    <script src="main.js"></script>
+  </body>
+</html>

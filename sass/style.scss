@@ -1,0 +1,85 @@
+@import "helpers/default";
+@import "helpers/breakpoints";
+
+$black: #222831;
+$dark-grey: #393e46;
+$grey: #eeeeee;
+$teal: #00adb5;
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $teal;
+  .box {
+    background-color: $black;
+    width: 500px;
+    height: 500px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow: auto;
+    .todo {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      .txt {
+        width: 85%;
+      }
+      input {
+        width: 100%;
+        padding: 10px;
+        font-size: 18px;
+        background-color: $dark-grey;
+        color: #eee;
+        &::placeholder {
+          color: rgba(#eee, 0.1);
+        }
+      }
+      .current-todo {
+        cursor: default;
+        color: rgba(#eee, 0.6);
+      }
+      .icons {
+        display: flex;
+        gap: 10px;
+        #add-btn {
+          color: limegreen;
+          &:hover {
+            color: rgb(63, 221, 63);
+          }
+        }
+        #edit-btn {
+          color: #ddd;
+          &:hover {
+            color: $grey;
+          }
+        }
+        #delete-btn {
+          color: #9b0000;
+          &:hover {
+            color: #be1616;
+          }
+        }
+      }
+    }
+    i {
+      cursor: pointer;
+      transition: 0.1s ease;
+      font-size: 25px;
+      &:hover {
+        transform: scale(1.3);
+      }
+    }
+  }
+  .todos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+}

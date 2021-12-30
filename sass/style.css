@@ -1,0 +1,152 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Cairo", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: inherit;
+  outline: none;
+  border: none;
+}
+
+.container {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #00adb5;
+}
+
+.container .box {
+  background-color: #222831;
+  width: 500px;
+  height: 500px;
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  overflow: auto;
+}
+
+.container .box .todo {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+.container .box .todo .txt {
+  width: 85%;
+}
+
+.container .box .todo input {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  background-color: #393e46;
+  color: #eee;
+}
+
+.container .box .todo input::-webkit-input-placeholder {
+  color: rgba(238, 238, 238, 0.1);
+}
+
+.container .box .todo input:-ms-input-placeholder {
+  color: rgba(238, 238, 238, 0.1);
+}
+
+.container .box .todo input::-ms-input-placeholder {
+  color: rgba(238, 238, 238, 0.1);
+}
+
+.container .box .todo input::placeholder {
+  color: rgba(238, 238, 238, 0.1);
+}
+
+.container .box .todo .current-todo {
+  cursor: default;
+  color: rgba(238, 238, 238, 0.6);
+}
+
+.container .box .todo .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+
+.container .box .todo .icons #add-btn {
+  color: limegreen;
+}
+
+.container .box .todo .icons #add-btn:hover {
+  color: #3fdd3f;
+}
+
+.container .box .todo .icons #edit-btn {
+  color: #ddd;
+}
+
+.container .box .todo .icons #edit-btn:hover {
+  color: #eeeeee;
+}
+
+.container .box .todo .icons #delete-btn {
+  color: #9b0000;
+}
+
+.container .box .todo .icons #delete-btn:hover {
+  color: #be1616;
+}
+
+.container .box i {
+  cursor: pointer;
+  -webkit-transition: 0.1s ease;
+  transition: 0.1s ease;
+  font-size: 25px;
+}
+
+.container .box i:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+.container .todos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=style.css.map */
